@@ -1,0 +1,146 @@
+.game {
+    margin: 20px 10%;
+    padding: 5% 0;
+    background-color: #d1e9e3;
+    color: black;
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.game-description {
+    margin: 10px 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        font-size: 20px;
+        margin: 10px;
+    }
+}
+
+.description-img {
+    // margin: 0 10%;
+    max-width: 450px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.game-character {
+    font-size: 22px;
+    margin: 40px 20% 40px 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    p {
+        width: 50%;
+        margin: 5px 0;
+        padding: 0 8px;
+        border-bottom: 1px solid #000;
+    }
+}
+
+.characters {
+    text-align: right;
+}
+
+.download-btns {
+    margin: 20px 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.download-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 60px;
+    min-width: 150px;
+    background-color: #38d51c;
+    border-radius: 4px;
+    color: #fafafa;
+    font-size: 22px;
+
+    p {
+        margin: 5px;
+        opacity: 0.85;
+        font-size: 18px;
+    }
+}
+
+#back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: #fafafa;
+    width: 200px;
+    height: 50px;
+    margin-left: 11%;
+    border-radius: 3px;
+    background-color: coral;
+}
+
+@media (max-width: 1200px) {
+    .game-character {
+        font-size: 18px;
+        margin: 40px 10%;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .download-btn {
+        font-size: 18px;
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .game-character {
+        font-size: 14px;
+        margin: 40px 5%;
+    }
+
+    #back {
+        width: 100px;
+        height: 25px;
+        font-size: 1rem;
+    }
+
+    .game {
+        margin: 10px 4%;
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .game-description {
+        margin: 10px 5%;
+    }
+
+    .description-img {
+        min-width: 100px;
+    }
+
+    .download-btn {
+        font-size: 14px;
+        min-width: 100px;
+        height: 38px;
+
+        p {
+            font-size: 10px;
+        }
+    }
+}

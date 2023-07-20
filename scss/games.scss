@@ -1,0 +1,166 @@
+@import "./allStyle.scss";
+
+.explanation {
+    margin: 20px 10%;
+    background-color: #8efff9;
+    border-radius: 50px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explanation-text {
+    color: #000;
+    font-size: 22px;
+
+    h1 {
+        color: #9b3d3d;
+        text-align: center;
+    }
+
+    ul {
+        margin: 5px 20px;
+        font-size: 24px;
+        color: #26770b;
+    }
+
+    li {
+        list-style: disc;
+        padding-left: -5px;
+    }
+}
+
+.explanation-img {
+    max-width: 80%;
+    min-width: 60%;
+    margin: 20px 0;
+
+    img {
+        width: 100%;
+    }
+}
+
+.games {
+
+    h1 {
+        text-align: center;
+        color: #0004d2;
+    }
+}
+
+.games-element {
+    margin: 20px 10%;
+    padding: 5px 20px;
+    background-color: rgb(255, 250, 250);
+    color: #000;
+    text-align: center;
+    border-radius: 3px;
+
+    h2 {
+        font-size: rem(40);
+        margin: 25px auto;
+    }
+
+    p {
+        font-size: rem(24);
+    }
+}
+
+.games-img-container {
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.games-img {
+    max-width: 400px;
+    margin: 0 7%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.games-href {
+    display: block;
+    margin: 20px auto;
+    width: 30%;
+    min-width: 200px;
+    background-color: #53b034;
+    height: 55px;
+    border-radius: 6px;
+
+    a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: rem(28);
+        color: #ffffff;
+
+        &:active {
+            background-color: #e3ae31;
+        }
+    }
+}
+
+#list-header {
+    font-size: 26px;
+}
+
+@media (max-width: 700px) {
+    .games-element {
+        p {
+            font-size: rem(18);
+        }
+
+        h2 {
+            font-size: rem(28);
+        }
+    }
+
+    .explanation-text {
+        font-size: rem(16);
+
+        ul {
+            font-size: rem(18);
+        }
+    }
+
+    #list-header {
+        font-size: rem(20);
+    }
+}
+
+@media (max-width: 450px) {
+    .games-element {
+        p {
+            font-size: rem(14);
+        }
+
+        h2 {
+            font-size: rem(24);
+        }
+    }
+
+    .explanation-text {
+        font-size: rem(12);
+
+        ul {
+            font-size: rem(14);
+        }
+    }
+
+    #list-header {
+        font-size: rem(16);
+    }
+}
+
+@media (max-width: 500px) {
+    .explanation {
+        padding: 10px 15px;
+    }
+}
